@@ -1,0 +1,62 @@
+/* Beautiful gradient background */
+.bg-gradient {
+    background: linear-gradient(135deg, #217692 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Card with black shadow for depth */
+.card {
+    background: rgba(228, 137, 137, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Black shadow for elegance */
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Navbar shadow */
+.navbar {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Post styling */
+.post {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.comment {
+    margin-left: 20px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Button animations */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+}

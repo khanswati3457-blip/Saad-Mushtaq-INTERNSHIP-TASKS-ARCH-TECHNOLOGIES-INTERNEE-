@@ -1,0 +1,54 @@
+/* Background gradient for aesthetic appeal */
+.bg-gradient {
+    background: linear-gradient(135deg, #3185a5 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Card with black shadow for depth */
+.card {
+    background: rgba(204, 104, 104, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Black shadow for elegance */
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Text shadow for titles */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #333;
+}
+
+/* Playlist item styling */
+.playlist-item {
+    padding: 10px;
+    margin: 5px 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.playlist-item:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.playlist-item.active {
+    background: #1d2022;
+    color: rgb(109, 214, 219);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .card {
+        margin: 10px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
